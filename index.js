@@ -135,3 +135,14 @@ filterByRole(studentsArr, "Teacher's Assistant");
 //         "role": "Teacher's Assistant",
 //     }
 // ]
+
+/**
+ * Finds the student with the lowest GPA.
+ * @param {Object[]} students - An array of objects, each representing a student.
+ * @returns {Object} The student with the lowest GPA.
+ * */
+function findLowestGPAStudent(students) {
+}
+
+console.log(findLowestGPAStudent(studentsArr));
+//> { name: "Ervin Howell", GPA: 2.9, role: "Hall Monitor" }
