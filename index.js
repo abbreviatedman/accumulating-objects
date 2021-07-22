@@ -37,10 +37,19 @@ const studentsArr = [
  * @returns {String} A string containing the names of all the students from the `students` array.
  */
 function stringNames(students) {
+  let names = "";
+  for (let i = 0; i < students.length; i++) {
+    if (i !== students.length - 1) {
+      names += students[i].name + ", ";
+    } else {
+      names += students[i].name;
+    }
+  }
 
+  return names;
 }
 
-stringNames(studentsArr);
+console.log(stringNames(studentsArr));
 //> "Leanne Graham, Ervin Howell, Clementine Bauch, Patricia Lebsack, John Dietrich, Dennis Schulist"
 
 /**
@@ -49,10 +58,16 @@ stringNames(studentsArr);
  * @returns {String[]} An array of the names of all the students from the `students` array.
  */
 function arrayNames(students) {
+  const names = [];
+  for (let i = 0; i < students.length; i++) {
+    const student = students[i];
+    names.push(student.name);
+  }
 
+  return names;
 }
 
-arrayNames(studentsArr);
+console.log(arrayNames(studentsArr));
 //> ['Leanne Graham', 'Ervin Howell', 'Clementine Bauch', 'Patricia Lebsack', 'John Dietrich', 'Dennis Schulist']
 
 /**
