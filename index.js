@@ -37,16 +37,7 @@ const studentsArr = [
  * @returns {String} A string containing the names of all the students from the `students` array.
  */
 function stringNames(students) {
-  let names = "";
-  for (let i = 0; i < students.length; i++) {
-    if (i !== students.length - 1) {
-      names += students[i].name + ", ";
-    } else {
-      names += students[i].name;
-    }
-  }
 
-  return names;
 }
 
 console.log(stringNames(studentsArr));
@@ -58,13 +49,7 @@ console.log(stringNames(studentsArr));
  * @returns {String[]} An array of the names of all the students from the `students` array.
  */
 function arrayNames(students) {
-  const names = [];
-  for (let i = 0; i < students.length; i++) {
-    const student = students[i];
-    names.push(student.name);
-  }
 
-  return names;
 }
 
 console.log(arrayNames(studentsArr));
@@ -80,10 +65,10 @@ function findByName(students, name) {
 
 }
 
-findByName(studentsArr, "Clementine Bauch");
+console.log(findByName(studentsArr, "Clementine Bauch"));
 //> { "name": "Clementine Bauch", "GPA": 3.4, "role": "Teacher's Assistant" }
 
-findByName(studentsArr, "John Dietrich");
+console.log(findByName(studentsArr, "John Dietrich"));
 //> { "name": "John Dietrich", "GPA": 3.7, "role": "Hall Monitor" }
 
 /**
@@ -95,7 +80,7 @@ function findAverageGPA(students) {
 
 }
 
-findAverageGPA(studentsArr);
+console.log(findAverageGPA(studentsArr));
 //> 3.45
 
 /**
@@ -108,7 +93,7 @@ function filterByRole(students, role) {
 
 }
 
-filterByRole(studentsArr, "Hall Monitor");
+console.log(filterByRole(studentsArr, "Hall Monitor"));
 //> [
 //     {
 //         "name": "Ervin Howell",
@@ -122,7 +107,7 @@ filterByRole(studentsArr, "Hall Monitor");
 //     }
 // ]
 
-filterByRole(studentsArr, "Teacher's Assistant");
+console.log(filterByRole(studentsArr, "Teacher's Assistant"));
 //> [
 //     {
 //         "name": "Clementine Bauch",
@@ -142,6 +127,7 @@ filterByRole(studentsArr, "Teacher's Assistant");
  * @returns {Object} The student with the lowest GPA.
  * */
 function findLowestGPAStudent(students) {
+
 }
 
 console.log(findLowestGPAStudent(studentsArr));
