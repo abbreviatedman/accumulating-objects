@@ -120,8 +120,8 @@ function findAverageGPA(students) {
    // Return added up gpa's divided by how many students 
   total /= students.length
  // Return the variable 
-console.log(total.toFixed(2));
-return total.toFixed(2);
+console.log(Number(total.toFixed(2)));
+return Number(total.toFixed(2));
 }
 findAverageGPA(studentsArr);
 //> 3.45
